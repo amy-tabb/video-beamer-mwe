@@ -3,8 +3,10 @@ A minimal working example for using video in beamer.
 
 To compile:
 
+````bash
 pdflatex videoMWE.tex
 pdflatex videoMWE.tex
+````
 
 To view, in previous times, I would have to use the [Okular](https://okular.kde.org/) pdf reader.  Now, in 2019, I have been able to get video to play in Ubuntu 18.04 using [Evince](https://wiki.gnome.org/Apps/Evince).
 
@@ -22,7 +24,7 @@ Then,
 \movie[label=show3, height = 6cm, poster, autostart, showcontrols]{\includegraphics[height = 6cm]{\imagepath/Potato-poster.png}}{\imagepath/Potato.mp4}
 ````
 
-includes an image `Potato-poster.png` over the region reserved for the video, and the video is `Potato.mp`.  All the options are specified for `\movie` are specified in [Beamer user guide](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf), and I have had different results depending on the .pdf viewer.   
+includes an image `Potato-poster.png` over the region reserved for the video, and the video is `Potato.m4p`.  All the options are specified for `\movie` are specified in [Beamer user guide](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf), and I have had different results depending on the .pdf viewer.   
 
 *If you are having compilation problems, note, that I usually install all of the texlive packages.*
 
